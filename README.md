@@ -1,8 +1,10 @@
 # foodie-project
 
 Description: 
+Using this foodie app, a user can select a recipe to get ingredient information and instructions on how to make the recipe. On the home page, there are about 12 recommended recipes from tasty. On the top of the page, there is a navigation bar which allows the user to choose between going to the home page, see the most popular recipes created by Tasty, and time specific recipes such as breakfast/brunch, lunch, and dinner. When they click on any of these options, 12 cards will appear on the page containing the title and an image of the dish. If the user selects one of these cards, they will see the ingredients and the instructions for the recipe. There is also an option for the user to search for recipes. This will filter out the recipes displayed to only show recipes that contain the keywords used in the search.
 
 Wireframe:
+
 <img width="601" alt="Screen Shot 2022-01-20 at 11 09 59 AM" src="https://user-images.githubusercontent.com/95596546/150440310-51c3e189-87df-414a-b394-25446df5375b.png">
 
 
