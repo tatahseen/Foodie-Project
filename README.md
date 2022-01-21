@@ -14,8 +14,6 @@ As a user, I can see the recommended recipes on the home page.
 
 As a user, I can click on any of the categories such as breakfast/brunch, lunch, or dinner to see time specific meals.
 
-As a user, I can click on the "More Categories" section to get more recipes within catergories such as "Vegan", "Vegetarian", "Italian", and so on.
-
 As a user, I can click on the a specific recipe card in order to get ingredient information and instructions on how to make the recipe.
 
 As a user, I can use the search bar to search specific recipes or to search recipes that contain the keywords entered.
@@ -37,4 +35,9 @@ Example of Response:
 Component Hierarchy:
 
 <img width="968" alt="Screen Shot 2022-01-20 at 6 24 38 PM" src="https://user-images.githubusercontent.com/95596546/150443624-3bdae2ff-eb8c-453e-8c35-33b7bbdb2f76.png">
+
+
+
+
+A stretch goal for the project is to add in a more categories section which contains options such as vegetarian, vegan, gluten-free, American, Italian, Chinese, and so on.
 
