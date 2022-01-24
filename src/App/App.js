@@ -18,7 +18,12 @@ function App() {
       </nav>
 
       <section>
-    
+      <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/breakfast" element={<Breakfast/>}/>
+          <Route path="/lunch" element={<Lunch/>}/>
+          <Route path="/dinner" element={<Dinner/>}/>
+        </Routes>
         
       </section>
    
