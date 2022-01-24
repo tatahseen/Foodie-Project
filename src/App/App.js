@@ -7,24 +7,49 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const initialState = {search:''}
+  const [searchState, setSearchState] = useState(initialState);
+
+  const handleChange = (event) => {
+    setSearchState({...searchState, [event.target.id]: event.target.value});
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(searchState);
+    setSearchState(initialState)
+  }
+
   return (
     <div>
-      <h1>HELLO WORLD</h1>
+      <div className='top'>
+      <h1>Foodie</h1>
+    
+      <form onSubmit={handleSubmit}>
+        <label htmlFor='Search'>Search Recipes: </label>
+        <input
+        id='search'
+        type='text'
+        onChange={handleChange}
+        />
+        <button type='submit'>Search</button>
+      </form>
+      </div>
+
       <nav>
-        <Link to="/"></Link>
+        <Link to="/">Home</Link>
         <Link to="/breakfast">Breakfast</Link>
         <Link to="/lunch">Lunch</Link>
         <Link to="/dinner">Dinner</Link>
       </nav>
 
       <section>
-      <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/breakfast" element={<Breakfast/>}/>
-          <Route path="/lunch" element={<Lunch/>}/>
-          <Route path="/dinner" element={<Dinner/>}/>
-        </Routes>
-        
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/breakfast" element={<Breakfast/>}/>
+            <Route path="/lunch" element={<Lunch/>}/>
+            <Route path="/dinner" element={<Dinner/>}/>
+          </Routes>
       </section>
    
       
