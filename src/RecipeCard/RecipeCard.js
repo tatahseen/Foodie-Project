@@ -1,5 +1,4 @@
 const RecipeCard = ({title, ready, image}) => {
-    console.log("EELLLOOO")
     return(
         <div className="card">
             <h1>{title}.....{ready}</h1>
