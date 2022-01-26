@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react"
-import { useParams } from "react-router-dom";
 import GetRecipeInfo from "./GetRecipeInfo";
 
 const GetRecipeID= () => { 
-    const { type } = useParams();
     console.log(window.location.href.indexOf('breakfast') > 0);
     const [recipeID, setRecipeID] = useState();
 
