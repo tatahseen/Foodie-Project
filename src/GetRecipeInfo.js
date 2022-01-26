@@ -3,10 +3,6 @@ import RecipeCard from "./RecipeCard/RecipeCard";
 
 const GetRecipeInfo = (props) => {
     const [recipeData, setRecipeData] = useState();
-    console.log(props)
-
-
-
     useEffect(() => {
        
             let url = `https://api.spoonacular.com/recipes/${props.id}/information?includeNutrition=false&apiKey=${process.env.REACT_APP_API_KEY}`
@@ -20,9 +16,6 @@ const GetRecipeInfo = (props) => {
      
     }, [])
   
-
-
-
     return ( 
         <div>
         

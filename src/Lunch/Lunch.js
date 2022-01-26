@@ -1,5 +1,9 @@
+import GetRecipeID from "../GetRecipeID";
+
 const Lunch  = () => {
-    return ( <div>This is Lunch</div>);
+    return(
+        <GetRecipeID />
+     )
 }
 
 export default Lunch;

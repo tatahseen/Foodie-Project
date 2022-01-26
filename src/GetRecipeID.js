@@ -2,14 +2,24 @@ import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom";
 import GetRecipeInfo from "./GetRecipeInfo";
 
-const GetRecipeID= (props) => { 
+const GetRecipeID= () => { 
     const { type } = useParams();
-    console.log(window.location.href.indexOf('lunch') > 0);
+    console.log(window.location.href.indexOf('breakfast') > 0);
     const [recipeID, setRecipeID] = useState();
-    console.log(props)
 
     useEffect(() => {
-        const url = `https://api.spoonacular.com/recipes/complexSearch?type=breakfast&number=12&apiKey=${process.env.REACT_APP_API_KEY}`
+        let foodType;
+        if(window.location.href.indexOf('breakfast') > 0){
+            foodType = 'breakfast';
+        }
+        else if(window.location.href.indexOf('lunch') > 0){
+            foodType = 'lunch';
+        }
+        else if(window.location.href.indexOf('dinner') > 0) {
+            foodType = 'dinner';
+        }
+
+        const url = `https://api.spoonacular.com/recipes/complexSearch?type=${foodType}&number=12&apiKey=${process.env.REACT_APP_API_KEY}`
         console.log(url)
         fetch(url)
         .then(res => res.json())
