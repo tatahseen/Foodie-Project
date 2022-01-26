@@ -5,6 +5,7 @@ import Lunch from '../Lunch/Lunch';
 import Dinner from '../Dinner/Dinner';
 import { useState } from 'react';
 import './App.css';
+import GetRecipeID from '../GetRecipeID';
 
 function App() {
   const initialState = {search:''}
@@ -46,7 +47,7 @@ function App() {
       <section>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/breakfast" element={<Breakfast/>}/>
+            <Route path="/breakfast" element={<GetRecipeID/>}/>
             <Route path="/lunch" element={<Lunch/>}/>
             <Route path="/dinner" element={<Dinner/>}/>
           </Routes>
