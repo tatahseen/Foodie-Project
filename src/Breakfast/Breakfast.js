@@ -1,8 +1,8 @@
-import GetRecipeID from "../GetRecipeID";
+import Recipes from "../Recipes/Recipes";
 
 const Breakfast= () => { 
     return(
-       <GetRecipeID />
+       <Recipes />
     )
 }
 
